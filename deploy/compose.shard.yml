@@ -1,0 +1,71 @@
+name: wiselib-shard
+services:
+  # ---------- 配置服务器（副本集 cfgrs，1 节点） ----------
+  cfg:
+    image: mongo:7.0
+    container_name: lib-cfg
+    hostname: lib-cfg
+    command: ["mongod", "--dbpath", "/data/db", "--port", "27201", "--configsvr",
+              "--replSet", "cfgrs", "--keyFile", "/keys/keyfile", "--bind_ip_all"]
+    ports:
+      - "127.0.0.1:27201:27201"
+    volumes:
+      - ../data/cfg:/data/db
+      - libkeys:/keys:ro
+    networks: [libnet]
+    restart: unless-stopped
+
+  # ---------- 分片一（副本集 shard1rs，1 节点） ----------
+  shard1:
+    image: mongo:7.0
+    container_name: lib-shard1
+    hostname: lib-shard1
+    command: ["mongod", "--dbpath", "/data/db", "--port", "27301", "--shardsvr",
+              "--replSet", "shard1rs", "--keyFile", "/keys/keyfile", "--bind_ip_all"]
+    ports:
+      - "127.0.0.1:27301:27301"
+    volumes:
+      - ../data/shard1:/data/db
+      - libkeys:/keys:ro
+    networks: [libnet]
+    restart: unless-stopped
+
+  # ---------- 分片二（副本集 shard2rs，1 节点） ----------
+  shard2:
+    image: mongo:7.0
+    container_name: lib-shard2
+    hostname: lib-shard2
+    command: ["mongod", "--dbpath", "/data/db", "--port", "27302", "--shardsvr",
+              "--replSet", "shard2rs", "--keyFile", "/keys/keyfile", "--bind_ip_all"]
+    ports:
+      - "127.0.0.1:27302:27302"
+    volumes:
+      - ../data/shard2:/data/db
+      - libkeys:/keys:ro
+    networks: [libnet]
+    restart: unless-stopped
+
+  # ---------- 路由节点 mongos ----------
+  mongos:
+    image: mongo:7.0
+    container_name: lib-mongos
+    hostname: lib-mongos
+    command: ["mongos", "--configdb", "cfgrs/lib-cfg:27201", "--port", "27017",
+              "--keyFile", "/keys/keyfile", "--bind_ip_all"]
+    ports:
+      - "127.0.0.1:27030:27017"
+    volumes:
+      - libkeys:/keys:ro
+    networks: [libnet]
+    depends_on: [cfg, shard1, shard2]
+    restart: unless-stopped
+
+volumes:
+  libkeys:
+    external: true
+    name: libkeys
+
+networks:
+  libnet:
+    external: true
+    name: libnet

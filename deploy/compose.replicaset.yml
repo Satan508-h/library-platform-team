@@ -1,0 +1,53 @@
+name: wiselib-rs
+services:
+  rs1:
+    image: mongo:7.0
+    container_name: lib-rs1
+    hostname: lib-rs1
+    command: ["mongod", "--dbpath", "/data/db", "--port", "27101", "--replSet", "librs",
+              "--keyFile", "/keys/keyfile", "--bind_ip_all", "--directoryperdb"]
+    ports:
+      - "127.0.0.1:27101:27101"
+    volumes:
+      - ../data/rs1:/data/db
+      - libkeys:/keys:ro
+    networks: [libnet]
+    restart: unless-stopped
+
+  rs2:
+    image: mongo:7.0
+    container_name: lib-rs2
+    hostname: lib-rs2
+    command: ["mongod", "--dbpath", "/data/db", "--port", "27102", "--replSet", "librs",
+              "--keyFile", "/keys/keyfile", "--bind_ip_all", "--directoryperdb"]
+    ports:
+      - "127.0.0.1:27102:27102"
+    volumes:
+      - ../data/rs2:/data/db
+      - libkeys:/keys:ro
+    networks: [libnet]
+    restart: unless-stopped
+
+  rs3:
+    image: mongo:7.0
+    container_name: lib-rs3
+    hostname: lib-rs3
+    command: ["mongod", "--dbpath", "/data/db", "--port", "27103", "--replSet", "librs",
+              "--keyFile", "/keys/keyfile", "--bind_ip_all", "--directoryperdb"]
+    ports:
+      - "127.0.0.1:27103:27103"
+    volumes:
+      - ../data/rs3:/data/db
+      - libkeys:/keys:ro
+    networks: [libnet]
+    restart: unless-stopped
+
+volumes:
+  libkeys:
+    external: true
+    name: libkeys
+
+networks:
+  libnet:
+    external: true
+    name: libnet

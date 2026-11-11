@@ -1,0 +1,33 @@
+{
+  "active": "single",
+  "data_dir": "../期末项目-智慧图书馆数字资源平台-学生包/03-数据",
+  "profiles": {
+    "single": {
+      "uri": "mongodb://lib_rw:LibRW%402025@127.0.0.1:27018/library?authSource=admin",
+      "db": "library",
+      "read_preference": "primary",
+      "desc": "单机实例（容器 lib-mongo-single，宿主机端口 27018）"
+    },
+    "replicaset": {
+      "uri": "mongodb://lib_rw:LibRW%402025@lib-rs1:27101,lib-rs2:27102,lib-rs3:27103/library?replicaSet=librs&authSource=admin",
+      "db": "library",
+      "read_preference": "primary",
+      "desc": "三节点副本集 librs（容器 lib-rs1/lib-rs2/lib-rs3，端口 27101-27103）"
+    },
+    "sharded": {
+      "uri": "mongodb://lib_rw:LibRW%402025@lib-mongos:27017/library?authSource=admin",
+      "db": "library",
+      "read_preference": "primary",
+      "desc": "分片集群（mongos 容器 lib-mongos，宿主机端口 27030）"
+    }
+  },
+  "users": {
+    "admin": {"user": "lib_admin", "pwd": "LibAdmin@2025", "roles": "root@admin"},
+    "read_write": {"user": "lib_rw", "pwd": "LibRW@2025", "roles": "readWrite@library"},
+    "read_only": {"user": "lib_ro", "pwd": "LibRO@2025", "roles": "read@library"}
+  },
+  "gridfs": {
+    "bucket": "fs",
+    "download_dir": "exports/downloaded"
+  }
+}
