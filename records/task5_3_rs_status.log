@@ -1,0 +1,29 @@
+{
+  "set": "librs",
+  "term": 1,
+  "members": [
+    {
+      "name": "lib-rs1:27101",
+      "state": "PRIMARY",
+      "health": 1.0,
+      "optimeDate": "2026-11-11 09:40:04",
+      "pingMs": null
+    },
+    {
+      "name": "lib-rs2:27102",
+      "state": "SECONDARY",
+      "health": 1.0,
+      "optimeDate": "2026-11-11 09:40:04",
+      "pingMs": 0
+    },
+    {
+      "name": "lib-rs3:27103",
+      "state": "SECONDARY",
+      "health": 1.0,
+      "optimeDate": "2026-11-11 09:40:04",
+      "pingMs": 0
+    }
+  ]
+}
+
+当前写入主节点：lib-rs1:27101

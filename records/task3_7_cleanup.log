@@ -1,0 +1,2 @@
+清理前 3001 条，删除演示流水 1 条，清理后 3000 条
+books=50 readers=30 borrow_logs=3000 category_stats=6

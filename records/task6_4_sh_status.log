@@ -1,0 +1,94 @@
+shardingVersion
+{ _id: 1, clusterId: ObjectId('6af439d46dd08c111cde6c67') }
+---
+shards
+[
+  {
+    _id: 'shard1rs',
+    host: 'shard1rs/lib-shard1:27301',
+    state: 1,
+    topologyTime: Timestamp({ t: 1794390502, i: 2 })
+  },
+  {
+    _id: 'shard2rs',
+    host: 'shard2rs/lib-shard2:27302',
+    state: 1,
+    topologyTime: Timestamp({ t: 1794390502, i: 6 })
+  }
+]
+---
+active mongoses
+[ { '7.0.43': 1 } ]
+---
+autosplit
+{ 'Currently enabled': 'yes' }
+---
+balancer
+{
+  'Currently enabled': 'yes',
+  'Currently running': 'no',
+  'Failed balancer rounds in last 5 attempts': 0,
+  'Migration Results for the last 24 hours': 'No recent migrations'
+}
+---
+shardedDataDistribution
+[
+  {
+    ns: 'library.borrow_logs',
+    shards: [
+      {
+        shardName: 'shard1rs',
+        numOrphanedDocs: 0,
+        numOwnedDocuments: 1300,
+        ownedSizeBytes: 200200,
+        orphanedSizeBytes: 0
+      },
+      {
+        shardName: 'shard2rs',
+        numOrphanedDocs: 0,
+        numOwnedDocuments: 1700,
+        ownedSizeBytes: 261800,
+        orphanedSizeBytes: 0
+      }
+    ]
+  }
+]
+---
+databases
+[
+  {
+    database: { _id: 'config', primary: 'config', partitioned: true },
+    collections: {}
+  },
+  {
+    database: {
+      _id: 'library',
+      primary: 'shard2rs',
+      partitioned: false,
+      version: {
+        uuid: UUID('dc169ae4-b2b3-48b5-bba0-b9eaa884bc92'),
+        timestamp: Timestamp({ t: 1794390519, i: 1 }),
+        lastMod: 1
+      }
+    },
+    collections: {
+      'library.borrow_logs': {
+        shardKey: { reader_card: 'hashed' },
+        unique: false,
+        balancing: true,
+        allowMigrations: true,
+        chunkMetadata: [
+          { shard: 'shard1rs', nChunks: 2 },
+          { shard: 'shard2rs', nChunks: 2 }
+        ],
+        chunks: [
+          { min: { reader_card: MinKey() }, max: { reader_card: Long('-4611686018427387902') }, 'on shard': 'shard2rs', 'last modified': Timestamp({ t: 1, i: 0 }) },
+          { min: { reader_card: Long('-4611686018427387902') }, max: { reader_card: Long('0') }, 'on shard': 'shard2rs', 'last modified': Timestamp({ t: 1, i: 1 }) },
+          { min: { reader_card: Long('0') }, max: { reader_card: Long('4611686018427387902') }, 'on shard': 'shard1rs', 'last modified': Timestamp({ t: 1, i: 2 }) },
+          { min: { reader_card: Long('4611686018427387902') }, max: { reader_card: MaxKey() }, 'on shard': 'shard1rs', 'last modified': Timestamp({ t: 1, i: 3 }) }
+        ],
+        tags: []
+      }
+    }
+  }
+]

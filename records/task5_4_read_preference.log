@@ -1,0 +1,7 @@
+
+读取偏好                实际服务节点            是否主节点     读到数据
+primary             lib-rs1:27101     True      True
+primaryPreferred    lib-rs1:27101     True      True
+secondary           lib-rs3:27103     False     True
+secondaryPreferred  lib-rs2:27102     False     True
+nearest             lib-rs1:27101     True      True

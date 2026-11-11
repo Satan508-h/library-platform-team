@@ -1,0 +1,11 @@
+=== 节点增删演练 2026-11-11 17:47:16 ===
+[1] 加入前状态
+2026-11-11 09:47:16.725  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+[2] 执行 addnode lib-rs4:27104
+已添加节点 lib-rs4:27104
+[3] 加入后状态（应为 4 成员）
+2026-11-11 09:47:30.474  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY, lib-rs4:27104=SECONDARY
+[4] 执行 removenode lib-rs4:27104
+已移除节点 lib-rs4:27104
+[5] 移除后状态（应回到 3 成员）
+2026-11-11 09:47:40.134  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY

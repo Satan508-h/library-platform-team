@@ -1,0 +1,177 @@
+[
+  {
+    "case": "books：类别 + 价格区间（50 条）",
+    "collection": "books",
+    "index": "idx_category_price",
+    "n_returned": 6,
+    "before": {
+      "stages": [
+        "COLLSCAN"
+      ],
+      "scan_type": "COLLSCAN",
+      "index_used": null,
+      "docs_examined": 50,
+      "keys_examined": 0,
+      "n_returned": 6,
+      "execution_ms": 0,
+      "avg_ms": 0.809,
+      "median_ms": 0.775,
+      "p95_ms": 1.039,
+      "min_ms": 0.661,
+      "iterations": 200
+    },
+    "after": {
+      "stages": [
+        "IXSCAN",
+        "FETCH"
+      ],
+      "scan_type": "IXSCAN",
+      "index_used": "idx_category_price",
+      "docs_examined": 6,
+      "keys_examined": 6,
+      "n_returned": 6,
+      "execution_ms": 2,
+      "avg_ms": 0.861,
+      "median_ms": 0.842,
+      "p95_ms": 1.08,
+      "min_ms": 0.669,
+      "iterations": 200
+    },
+    "speedup_x": 0.94,
+    "docs_examined_ratio": 8.3,
+    "consistent": true,
+    "measured_at": "2026-11-11T10:18:26.409645+00:00"
+  },
+  {
+    "case": "borrow_logs：按读者取流水并倒序（3000 条）",
+    "collection": "borrow_logs",
+    "index": "idx_reader_date",
+    "n_returned": 10,
+    "before": {
+      "stages": [
+        "COLLSCAN",
+        "SORT"
+      ],
+      "scan_type": "COLLSCAN",
+      "index_used": null,
+      "docs_examined": 3000,
+      "keys_examined": 0,
+      "n_returned": 10,
+      "execution_ms": 1,
+      "avg_ms": 1.949,
+      "median_ms": 1.895,
+      "p95_ms": 2.414,
+      "min_ms": 1.628,
+      "iterations": 200
+    },
+    "after": {
+      "stages": [
+        "IXSCAN",
+        "FETCH"
+      ],
+      "scan_type": "IXSCAN",
+      "index_used": "idx_reader_date",
+      "docs_examined": 10,
+      "keys_examined": 12,
+      "n_returned": 10,
+      "execution_ms": 2,
+      "avg_ms": 0.85,
+      "median_ms": 0.833,
+      "p95_ms": 1.077,
+      "min_ms": 0.661,
+      "iterations": 200
+    },
+    "speedup_x": 2.29,
+    "docs_examined_ratio": 300.0,
+    "consistent": true,
+    "measured_at": "2026-11-11T10:18:27.026598+00:00"
+  },
+  {
+    "case": "borrow_logs：时间范围 + 倒序（3000 条）",
+    "collection": "borrow_logs",
+    "index": "idx_borrow_date",
+    "n_returned": 10,
+    "before": {
+      "stages": [
+        "COLLSCAN",
+        "SORT"
+      ],
+      "scan_type": "COLLSCAN",
+      "index_used": null,
+      "docs_examined": 3000,
+      "keys_examined": 0,
+      "n_returned": 10,
+      "execution_ms": 1,
+      "avg_ms": 2.096,
+      "median_ms": 2.046,
+      "p95_ms": 2.551,
+      "min_ms": 1.716,
+      "iterations": 200
+    },
+    "after": {
+      "stages": [
+        "IXSCAN",
+        "FETCH"
+      ],
+      "scan_type": "IXSCAN",
+      "index_used": "idx_borrow_date",
+      "docs_examined": 10,
+      "keys_examined": 10,
+      "n_returned": 10,
+      "execution_ms": 3,
+      "avg_ms": 0.866,
+      "median_ms": 0.834,
+      "p95_ms": 1.151,
+      "min_ms": 0.651,
+      "iterations": 200
+    },
+    "speedup_x": 2.42,
+    "docs_examined_ratio": 300.0,
+    "consistent": true,
+    "measured_at": "2026-11-11T10:18:27.655396+00:00"
+  },
+  {
+    "case": "bench_borrow：按读者 + 倒序（200,000 条放大实验）",
+    "collection": "bench_borrow",
+    "index": "idx_bench_reader_date",
+    "n_returned": 10,
+    "before": {
+      "stages": [
+        "COLLSCAN",
+        "SORT"
+      ],
+      "scan_type": "COLLSCAN",
+      "index_used": null,
+      "docs_examined": 200000,
+      "keys_examined": 0,
+      "n_returned": 10,
+      "execution_ms": 41,
+      "avg_ms": 40.625,
+      "median_ms": 40.397,
+      "p95_ms": 43.05,
+      "min_ms": 38.399,
+      "iterations": 20
+    },
+    "after": {
+      "stages": [
+        "IXSCAN",
+        "FETCH"
+      ],
+      "scan_type": "IXSCAN",
+      "index_used": "idx_bench_reader_date",
+      "docs_examined": 10,
+      "keys_examined": 10,
+      "n_returned": 10,
+      "execution_ms": 38,
+      "avg_ms": 0.831,
+      "median_ms": 0.776,
+      "p95_ms": 1.072,
+      "min_ms": 0.668,
+      "iterations": 20
+    },
+    "speedup_x": 48.89,
+    "docs_examined_ratio": 20000.0,
+    "consistent": true,
+    "measured_at": "2026-11-11T10:18:28.884518+00:00"
+  }
+]

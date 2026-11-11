@@ -1,0 +1,28 @@
+已生成 bench_borrow：200,000 条
+正在测试：books：类别 + 价格区间（50 条） ...
+正在测试：borrow_logs：按读者取流水并倒序（3000 条） ...
+正在测试：borrow_logs：时间范围 + 倒序（3000 条） ...
+正在测试：bench_borrow：按读者 + 倒序（200,000 条放大实验） ...
+
+books：类别 + 价格区间（50 条）
+  索引前：COLLSCAN 扫描文档      50 平均    0.809 ms
+  索引后：IXSCAN   扫描文档       6 平均    0.861 ms
+  提速 0.94x，扫描量下降 8.3x，结果一致=True
+
+borrow_logs：按读者取流水并倒序（3000 条）
+  索引前：COLLSCAN 扫描文档    3000 平均    1.949 ms
+  索引后：IXSCAN   扫描文档      10 平均    0.850 ms
+  提速 2.29x，扫描量下降 300.0x，结果一致=True
+
+borrow_logs：时间范围 + 倒序（3000 条）
+  索引前：COLLSCAN 扫描文档    3000 平均    2.096 ms
+  索引后：IXSCAN   扫描文档      10 平均    0.866 ms
+  提速 2.42x，扫描量下降 300.0x，结果一致=True
+
+bench_borrow：按读者 + 倒序（200,000 条放大实验）
+  索引前：COLLSCAN 扫描文档  200000 平均   40.625 ms
+  索引后：IXSCAN   扫描文档      10 平均    0.831 ms
+  提速 48.89x，扫描量下降 20000.0x，结果一致=True
+
+已删除实验集合 bench_borrow
+结果已写入：index_benchmark.json / index_benchmark.md

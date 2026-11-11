@@ -1,0 +1,18 @@
+﻿2026-11-11 17:44:21.142  演练开始：启动持续读写探针（90 秒）与状态轮询（100 秒，1 秒间隔）
+2026-11-11 17:44:33.387  STEP0 基线状态（停止主节点前）
+2026-11-11 17:44:34.197    2026-11-11 09:44:33.665  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:44:34.200  STEP1 停止当前主节点容器 lib-rs1（模拟主节点宕机）
+2026-11-11 17:44:37.678  lib-rs1 已停止
+2026-11-11 17:44:41.000    2026-11-11 09:44:39.966  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:44:41.002  STEP2 检测到新主节点：2026-11-11 09:44:39.966  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:44:47.017  STEP3 重启原主节点 lib-rs1，观察其角色
+2026-11-11 17:44:51.116    2026-11-11 09:44:50.581  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:44:54.950    2026-11-11 09:44:54.417  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:44:58.828    2026-11-11 09:44:58.291  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:45:02.671    2026-11-11 09:45:02.141  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:45:06.527    2026-11-11 09:45:05.996  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:45:10.391    2026-11-11 09:45:09.859  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:45:14.234    2026-11-11 09:45:13.703  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:45:18.099    2026-11-11 09:45:17.570  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 17:45:18.101  STEP4 演练结束，等待探针写完
+2026-11-11 17:45:33.111  完成

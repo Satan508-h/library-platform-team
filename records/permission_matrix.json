@@ -1,0 +1,145 @@
+[
+  {
+    "role": "只读 lib_ro",
+    "checks": [
+      {
+        "case": "查询 books 文档数",
+        "allowed": true,
+        "result": "50"
+      },
+      {
+        "case": "聚合查询分类统计",
+        "allowed": true,
+        "result": "[{'_id': '文学', 'n': 12}, {'_id': '数学', 'n': 6}]"
+      },
+      {
+        "case": "插入 books 文档",
+        "allowed": false,
+        "code": 13,
+        "message": "not authorized on library to execute command { insert: \"books\", ordered: true, lsid: { id: UUID(\"58be77af-fa14-4ff6-ab32-11cb630286e8\") }, $db: \"library\" }, ful"
+      },
+      {
+        "case": "更新 books 文档",
+        "allowed": false,
+        "code": 13,
+        "message": "not authorized on library to execute command { update: \"books\", ordered: true, lsid: { id: UUID(\"58be77af-fa14-4ff6-ab32-11cb630286e8\") }, $db: \"library\" }, ful"
+      },
+      {
+        "case": "删除 books 文档",
+        "allowed": false,
+        "code": 13,
+        "message": "not authorized on library to execute command { delete: \"books\", ordered: true, lsid: { id: UUID(\"58be77af-fa14-4ff6-ab32-11cb630286e8\") }, $db: \"library\" }, ful"
+      },
+      {
+        "case": "写 audit_logs 操作日志",
+        "allowed": false,
+        "code": 13,
+        "message": "not authorized on library to execute command { insert: \"audit_logs\", ordered: true, lsid: { id: UUID(\"58be77af-fa14-4ff6-ab32-11cb630286e8\") }, $db: \"library\" }"
+      },
+      {
+        "case": "查看服务器状态 serverStatus",
+        "allowed": false,
+        "code": 13,
+        "message": "not authorized on admin to execute command { serverStatus: 1, lsid: { id: UUID(\"58be77af-fa14-4ff6-ab32-11cb630286e8\") }, $db: \"admin\" }, full error: {'ok': 0.0"
+      },
+      {
+        "case": "创建用户 createUser",
+        "allowed": false,
+        "code": 13,
+        "message": "not authorized on library to execute command { createUser: \"perm_probe_user\", pwd: \"xxx\", roles: [ \"read\" ], lsid: { id: UUID(\"58be77af-fa14-4ff6-ab32-11cb63028"
+      }
+    ]
+  },
+  {
+    "role": "读写 lib_rw",
+    "checks": [
+      {
+        "case": "查询 books 文档数",
+        "allowed": true,
+        "result": "50"
+      },
+      {
+        "case": "聚合查询分类统计",
+        "allowed": true,
+        "result": "[{'_id': '文学', 'n': 12}, {'_id': '数学', 'n': 6}]"
+      },
+      {
+        "case": "插入 books 文档",
+        "allowed": true,
+        "result": "6af43a7348d207e9e8f85140"
+      },
+      {
+        "case": "更新 books 文档",
+        "allowed": true,
+        "result": "1"
+      },
+      {
+        "case": "删除 books 文档",
+        "allowed": true,
+        "result": "1"
+      },
+      {
+        "case": "写 audit_logs 操作日志",
+        "allowed": true,
+        "result": "6af43a7348d207e9e8f85141"
+      },
+      {
+        "case": "查看服务器状态 serverStatus",
+        "allowed": false,
+        "code": 13,
+        "message": "not authorized on admin to execute command { serverStatus: 1, lsid: { id: UUID(\"3a8fb117-9b2e-44ae-b4f5-813bed68900e\") }, $db: \"admin\" }, full error: {'ok': 0.0"
+      },
+      {
+        "case": "创建用户 createUser",
+        "allowed": false,
+        "code": 13,
+        "message": "not authorized on library to execute command { createUser: \"perm_probe_user\", pwd: \"xxx\", roles: [ \"read\" ], lsid: { id: UUID(\"3a8fb117-9b2e-44ae-b4f5-813bed689"
+      }
+    ]
+  },
+  {
+    "role": "管理 lib_admin",
+    "checks": [
+      {
+        "case": "查询 books 文档数",
+        "allowed": true,
+        "result": "50"
+      },
+      {
+        "case": "聚合查询分类统计",
+        "allowed": true,
+        "result": "[{'_id': '文学', 'n': 12}, {'_id': '数学', 'n': 6}]"
+      },
+      {
+        "case": "插入 books 文档",
+        "allowed": true,
+        "result": "6af43a7348d207e9e8f85143"
+      },
+      {
+        "case": "更新 books 文档",
+        "allowed": true,
+        "result": "1"
+      },
+      {
+        "case": "删除 books 文档",
+        "allowed": true,
+        "result": "1"
+      },
+      {
+        "case": "写 audit_logs 操作日志",
+        "allowed": true,
+        "result": "6af43a7348d207e9e8f85144"
+      },
+      {
+        "case": "查看服务器状态 serverStatus",
+        "allowed": true,
+        "result": "1347.0"
+      },
+      {
+        "case": "创建用户 createUser",
+        "allowed": true,
+        "result": "{'ok': 1.0}"
+      }
+    ]
+  }
+]

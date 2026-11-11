@@ -1,0 +1,13 @@
+数据目录：/work/期末项目-智慧图书馆数字资源平台-学生包/03-数据
+导入 books：源 50 条，库中 50 条
+导入 readers：源 30 条，库中 30 条
+导入 borrow_logs：源 3000 条，库中 3000 条
+
+集合                 源文件条目      库中文档结果
+books                 50        50      一致
+readers               30        30      一致
+borrow_logs         3000      3000      一致
+
+类型抽检：publish_date = datetime.datetime(2023, 2, 28, 16, 0, tzinfo=FixedOffset(datetime.timedelta(0), 'UTC')) -> datetime
+
+数据核对：通过

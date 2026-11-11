@@ -1,0 +1,101 @@
+2026-11-11 09:44:21.589  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:22.590  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:23.591  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:24.592  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:25.594  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:26.595  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:27.596  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:28.598  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:29.599  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:30.601  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:31.602  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:32.603  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:33.605  term=3 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:34.608  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:35.609  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:36.611  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:37.612  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:38.614  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:39.616  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:40.617  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:41.619  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:42.621  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:43.622  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:44.623  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:45.625  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:46.627  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:47.628  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:48.630  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:49.629  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:50.631  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:51.632  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:52.634  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:53.635  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:54.636  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:55.638  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:56.639  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:57.640  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:58.642  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:44:59.643  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:00.645  term=4 primary=lib-rs2:27102 | lib-rs1:27101=(not reachable/healthy), lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:01.646  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:02.647  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:03.648  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:04.650  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:05.651  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:06.652  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:07.653  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:08.655  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:09.656  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:10.657  term=4 primary=lib-rs2:27102 | lib-rs1:27101=SECONDARY, lib-rs2:27102=PRIMARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:11.661  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:12.662  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:13.664  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:14.665  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:15.666  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:16.668  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:17.669  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:18.670  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:19.670  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:20.672  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:21.674  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:22.675  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:23.677  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:24.679  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:25.680  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:26.682  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:27.684  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:28.685  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:29.687  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:30.688  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:31.689  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:32.691  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:33.693  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:34.694  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:35.695  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:36.697  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:37.698  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:38.700  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:39.701  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:40.703  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:41.704  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:42.706  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:43.707  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:44.709  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:45.710  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:46.712  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:47.714  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:48.715  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:49.715  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:50.717  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:51.718  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:52.720  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:53.721  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:54.723  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:55.725  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:56.726  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:57.728  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:58.730  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:45:59.732  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:46:00.733  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY
+2026-11-11 09:46:01.735  term=5 primary=lib-rs1:27101 | lib-rs1:27101=PRIMARY, lib-rs2:27102=SECONDARY, lib-rs3:27103=SECONDARY

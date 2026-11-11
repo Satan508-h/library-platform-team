@@ -1,0 +1,39 @@
+数据库：library  部署形态：single
+说明：以下“拒绝”均为 MongoDB 服务端返回的授权错误（code 13 Not authorized）。
+
+== 只读 lib_ro ==
+  [允许] 查询 books 文档数
+  [允许] 聚合查询分类统计
+  [拒绝] 插入 books 文档 -> code=13 not authorized on library to execute command { insert: "books", ordered: true, lsid: { id:
+  [拒绝] 更新 books 文档 -> code=13 not authorized on library to execute command { update: "books", ordered: true, lsid: { id:
+  [拒绝] 删除 books 文档 -> code=13 not authorized on library to execute command { delete: "books", ordered: true, lsid: { id:
+  [拒绝] 写 audit_logs 操作日志 -> code=13 not authorized on library to execute command { insert: "audit_logs", ordered: true, lsid: 
+  [拒绝] 查看服务器状态 serverStatus -> code=13 not authorized on admin to execute command { serverStatus: 1, lsid: { id: UUID("58be77af-f
+  [拒绝] 创建用户 createUser -> code=13 not authorized on library to execute command { createUser: "perm_probe_user", pwd: "xxx", 
+
+== 读写 lib_rw ==
+  [允许] 查询 books 文档数
+  [允许] 聚合查询分类统计
+  [允许] 插入 books 文档
+  [允许] 更新 books 文档
+  [允许] 删除 books 文档
+  [允许] 写 audit_logs 操作日志
+  [拒绝] 查看服务器状态 serverStatus -> code=13 not authorized on admin to execute command { serverStatus: 1, lsid: { id: UUID("3a8fb117-9
+  [拒绝] 创建用户 createUser -> code=13 not authorized on library to execute command { createUser: "perm_probe_user", pwd: "xxx", 
+
+== 管理 lib_admin ==
+  [允许] 查询 books 文档数
+  [允许] 聚合查询分类统计
+  [允许] 插入 books 文档
+  [允许] 更新 books 文档
+  [允许] 删除 books 文档
+  [允许] 写 audit_logs 操作日志
+  [允许] 查看服务器状态 serverStatus
+  [允许] 创建用户 createUser
+
+汇总：
+  只读 lib_ro    被拒绝的操作：['插入 books 文档', '更新 books 文档', '删除 books 文档', '写 audit_logs 操作日志', '查看服务器状态 serverStatus', '创建用户 createUser']
+  读写 lib_rw    被拒绝的操作：['查看服务器状态 serverStatus', '创建用户 createUser']
+  管理 lib_admin 被拒绝的操作：无
+
+权限边界验证：通过

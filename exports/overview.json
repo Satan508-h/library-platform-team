@@ -1,0 +1,357 @@
+{
+  "导出时间": "2026-11-11 18:10:47",
+  "集合计数": {
+    "books": 50,
+    "readers": 30,
+    "borrow_logs": 3000,
+    "category_stats": 6,
+    "audit_logs": 15
+  },
+  "gridfs_files": 6,
+  "借阅状态分布": {
+    "已归还": 2142,
+    "逾期": 429,
+    "借出": 429
+  },
+  "学院借阅排行": [
+    {
+      "total": 500,
+      "college": "计算机学院",
+      "reader_count": 5
+    },
+    {
+      "total": 500,
+      "college": "经济管理学院",
+      "reader_count": 5
+    },
+    {
+      "total": 400,
+      "college": "文学院",
+      "reader_count": 4
+    },
+    {
+      "total": 400,
+      "college": "管理学院",
+      "reader_count": 4
+    },
+    {
+      "total": 400,
+      "college": "外国语学院",
+      "reader_count": 4
+    },
+    {
+      "total": 400,
+      "college": "数学与统计学院",
+      "reader_count": 4
+    },
+    {
+      "total": 400,
+      "college": "历史文化学院",
+      "reader_count": 4
+    }
+  ],
+  "月度趋势": [
+    {
+      "period": "2022-12",
+      "total": 3
+    },
+    {
+      "period": "2023-01",
+      "total": 83
+    },
+    {
+      "period": "2023-02",
+      "total": 77
+    },
+    {
+      "period": "2023-03",
+      "total": 87
+    },
+    {
+      "period": "2023-04",
+      "total": 81
+    },
+    {
+      "period": "2023-05",
+      "total": 86
+    },
+    {
+      "period": "2023-06",
+      "total": 82
+    },
+    {
+      "period": "2023-07",
+      "total": 84
+    },
+    {
+      "period": "2023-08",
+      "total": 84
+    },
+    {
+      "period": "2023-09",
+      "total": 84
+    },
+    {
+      "period": "2023-10",
+      "total": 84
+    },
+    {
+      "period": "2023-11",
+      "total": 82
+    },
+    {
+      "period": "2023-12",
+      "total": 86
+    },
+    {
+      "period": "2024-01",
+      "total": 86
+    },
+    {
+      "period": "2024-02",
+      "total": 80
+    },
+    {
+      "period": "2024-03",
+      "total": 83
+    },
+    {
+      "period": "2024-04",
+      "total": 83
+    },
+    {
+      "period": "2024-05",
+      "total": 85
+    },
+    {
+      "period": "2024-06",
+      "total": 83
+    },
+    {
+      "period": "2024-07",
+      "total": 84
+    },
+    {
+      "period": "2024-08",
+      "total": 88
+    },
+    {
+      "period": "2024-09",
+      "total": 80
+    },
+    {
+      "period": "2024-10",
+      "total": 86
+    },
+    {
+      "period": "2024-11",
+      "total": 82
+    },
+    {
+      "period": "2024-12",
+      "total": 86
+    },
+    {
+      "period": "2025-01",
+      "total": 83
+    },
+    {
+      "period": "2025-02",
+      "total": 79
+    },
+    {
+      "period": "2025-03",
+      "total": 84
+    },
+    {
+      "period": "2025-04",
+      "total": 84
+    },
+    {
+      "period": "2025-05",
+      "total": 82
+    },
+    {
+      "period": "2025-06",
+      "total": 85
+    },
+    {
+      "period": "2025-07",
+      "total": 83
+    },
+    {
+      "period": "2025-08",
+      "total": 86
+    },
+    {
+      "period": "2025-09",
+      "total": 81
+    },
+    {
+      "period": "2025-10",
+      "total": 87
+    },
+    {
+      "period": "2025-11",
+      "total": 81
+    },
+    {
+      "period": "2025-12",
+      "total": 76
+    }
+  ],
+  "借阅Top10（字段值）": [
+    {
+      "isbn": "9787040396614",
+      "title": "高等数学（上册）",
+      "borrow_count": 312,
+      "location": {
+        "floor": "二楼专业图书区",
+        "shelf": "D-15",
+        "copies": 3
+      }
+    },
+    {
+      "isbn": "9787040396621",
+      "title": "线性代数（第6版）",
+      "borrow_count": 287,
+      "location": {
+        "floor": "二楼专业图书区",
+        "shelf": "D-08",
+        "copies": 3
+      }
+    },
+    {
+      "isbn": "9787513590805",
+      "title": "新概念英语（第2册）",
+      "borrow_count": 265,
+      "location": {
+        "floor": "三楼外文图书区",
+        "shelf": "E-01",
+        "copies": 3
+      }
+    },
+    {
+      "isbn": "9787544253994",
+      "title": "活着",
+      "borrow_count": 243,
+      "location": {
+        "floor": "一楼中文图书区",
+        "shelf": "B-04",
+        "copies": 1
+      }
+    },
+    {
+      "isbn": "9787508660752",
+      "title": "人类简史",
+      "borrow_count": 221,
+      "location": {
+        "floor": "一楼中文图书区",
+        "shelf": "F-01",
+        "copies": 1
+      }
+    },
+    {
+      "isbn": "9787302653315",
+      "title": "数据结构（C语言版）",
+      "borrow_count": 203,
+      "location": {
+        "floor": "二楼专业图书区",
+        "shelf": "A-04",
+        "copies": 1
+      }
+    },
+    {
+      "isbn": "9787544270878",
+      "title": "解忧杂货店",
+      "borrow_count": 201,
+      "location": {
+        "floor": "一楼中文图书区",
+        "shelf": "B-03",
+        "copies": 3
+      }
+    },
+    {
+      "isbn": "9787513590812",
+      "title": "新概念英语（第3册）",
+      "borrow_count": 198,
+      "location": {
+        "floor": "三楼外文图书区",
+        "shelf": "E-16",
+        "copies": 3
+      }
+    },
+    {
+      "isbn": "9787020042033",
+      "title": "红楼梦",
+      "borrow_count": 189,
+      "location": {
+        "floor": "一楼中文图书区",
+        "shelf": "B-19",
+        "copies": 1
+      }
+    },
+    {
+      "isbn": "9787532775062",
+      "title": "小王子",
+      "borrow_count": 186,
+      "location": {
+        "floor": "一楼中文图书区",
+        "shelf": "B-07",
+        "copies": 3
+      }
+    }
+  ],
+  "借阅Top10（流水实数）": [
+    {
+      "total": 60,
+      "book_isbn": "9787521701586",
+      "title": "国富论"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787115478795",
+      "title": "编译原理（第2版）"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787108009821",
+      "title": "中国通史"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787115461476",
+      "title": "深度学习"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787506365437",
+      "title": "许三观卖血记"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787121362726",
+      "title": "深入理解计算机系统（第3版）"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787549529322",
+      "title": "平凡的世界（全三部）"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787111666787",
+      "title": "数据库系统概念（第7版）"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787544253994",
+      "title": "活着"
+    },
+    {
+      "total": 60,
+      "book_isbn": "9787508647357",
+      "title": "万历十五年"
+    }
+  ]
+}

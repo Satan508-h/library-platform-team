@@ -1,0 +1,16 @@
+连接：sharded / lib-mongos:27017/library?authSource=admin
+
+=== 1. 集群拓扑 ===
+  分片 shard1rs: shard1rs/lib-shard1:27301
+  分片 shard2rs: shard2rs/lib-shard2:27302
+  分片集合 library.borrow_logs 分片键：{'reader_card': 'hashed'}
+
+=== 2. 文档在分片上的分布 ===
+  shard1rs: 1300 条（43.3%），存储 73728 字节
+  shard2rs: 1700 条（56.7%），存储 90112 字节
+  块数量：4，按分片统计：{'shard2rs': 2, 'shard1rs': 2}
+
+=== 3. 定向查询（命中分片键 reader_card） ===
+  取样本读者卡号：R20240001
+  执行阶段：SINGLE_SHARD → FETCH → IXSCAN
+  扫描文档数：100，返回 100 条

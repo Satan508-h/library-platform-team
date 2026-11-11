@@ -1,0 +1,49 @@
+连接信息： {'profile': 'single', 'read_preference': 'primary', 'uri_masked': 'mongodb://lib_rw:LibRW%402025@***'}
+已清空全部业务集合
+集合： ['audit_logs', 'books', 'borrow_logs', 'category_stats', 'readers']
+
+共建立 16 个索引：
+  books         uk_isbn             {'isbn': 1}  unique=True
+  books         idx_category_price  {'category': 1, 'price': 1}  unique=False
+  books         idx_tags            {'tags': 1}  unique=False
+  books         idx_rating          {'rating': -1}  unique=False
+  books         idx_publish_date    {'publish_date': 1}  unique=False
+  books         idx_title           {'title': 1}  unique=False
+  readers       uk_card_no          {'card_no': 1}  unique=True
+  readers       idx_college         {'college': 1}  unique=False
+  readers       idx_level           {'level': 1}  unique=False
+  borrow_logs   idx_reader_date     {'reader_card': 1, 'borrow_date': -1}  unique=False
+  borrow_logs   idx_book_date       {'book_isbn': 1, 'borrow_date': -1}  unique=False
+  borrow_logs   idx_borrow_date     {'borrow_date': -1}  unique=False
+  borrow_logs   idx_status          {'status': 1}  unique=False
+  category_statsidx_book_count      {'book_count': -1}  unique=False
+  category_statsuk_stats_category   {'category': 1}  unique=True
+  books         idx_text_search     title:text,author:text  unique=False
+
+[books] 索引：
+  - _id_                 SON([('_id', 1)])  unique=False
+  - uk_isbn              SON([('isbn', 1)])  unique=True
+  - idx_category_price   SON([('category', 1), ('price', 1)])  unique=False
+  - idx_tags             SON([('tags', 1)])  unique=False
+  - idx_rating           SON([('rating', -1)])  unique=False
+  - idx_publish_date     SON([('publish_date', 1)])  unique=False
+  - idx_title            SON([('title', 1)])  unique=False
+  - idx_text_search      SON([('_fts', 'text'), ('_ftsx', 1)])  unique=False
+
+[readers] 索引：
+  - _id_                 SON([('_id', 1)])  unique=False
+  - uk_card_no           SON([('card_no', 1)])  unique=True
+  - idx_college          SON([('college', 1)])  unique=False
+  - idx_level            SON([('level', 1)])  unique=False
+
+[borrow_logs] 索引：
+  - _id_                 SON([('_id', 1)])  unique=False
+  - idx_reader_date      SON([('reader_card', 1), ('borrow_date', -1)])  unique=False
+  - idx_book_date        SON([('book_isbn', 1), ('borrow_date', -1)])  unique=False
+  - idx_borrow_date      SON([('borrow_date', -1)])  unique=False
+  - idx_status           SON([('status', 1)])  unique=False
+
+[category_stats] 索引：
+  - _id_                 SON([('_id', 1)])  unique=False
+  - idx_book_count       SON([('book_count', -1)])  unique=False
+  - uk_stats_category    SON([('category', 1)])  unique=True

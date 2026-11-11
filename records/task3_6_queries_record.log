@@ -1,0 +1,24 @@
+[ 1] 按类别 + 价格区间组合筛选（计算机，80—130 元）             结果 6 条
+     {"title": "Python编程：从入门到实践", "price": 89.0}
+[ 2] 按标签多选匹配（$all: 编程 + 入门）                   结果 1 条
+     {"title": "Python编程：从入门到实践", "tags": ["编程", "入门", "Python"]}
+[ 3] 按书名模糊检索（title 含 Python）                  结果 2 条
+     {"title": "Python数据分析", "author": "Wes McKinney"}
+[ 4] 按出版年份范围检索（2020—2023）                     结果 9 条
+     {"title": "飘", "publish_date": "2020-02-29 16:00:00+00:00"}
+[ 5] 查询缺少 tags 字段的图书（数据质量核查）                  结果 4 条
+     {"isbn": "9787532754808", "title": "百年孤独"}
+[ 6] 按评分排序取前 10（仅书名/作者/评分）                    结果 10 条
+     {"title": "活着", "author": "余华", "rating": 4.9}
+[ 7] 按类别统计藏书量、平均价格、平均评分                       结果 6 条
+     {"book_count": 15, "total_stock": 172, "max_price": 168.0, "category": "计算机", "avg_price": 89.53, "avg_rating": 4.53}
+[ 8] 各学院借阅总量前 5（多集合 $lookup）                  结果 5 条
+     {"borrow_total": 501, "detail": [{"level": "普通", "n": 401}, {"level": "高级", "n": 100}], "college": "计算机学院"}
+[ 9] 按年月统计借阅趋势                                结果 38 条
+     {"borrow_count": 3, "year": 2022, "month": 12, "label": "2022年12月", "unique_readers": 3}
+[10] 借阅次数最多的 10 本图书 + 馆藏位置                    结果 10 条
+     {"isbn": "9787040396614", "title": "高等数学（上册）", "author": "同济大学数学系", "category": "数学", "stock": 30, "borrow_count": 312, "location": {"floor": "二楼专业图书区
+[11] 分类统计结果写入 category_stats 集合               结果 6 条
+     {"book_count": 15, "total_stock": 172, "max_price": 168.0, "category": "计算机", "avg_price": 89.53, "avg_rating": 4.53, "generated_at": "2026-11-11 09:5
+
+记录已写入 C:\Users\33879\Desktop\期末项目-智慧图书馆数字资源平台-学生包\智慧图书馆平台-实现交付\records\task3_queries_and_stats.md
